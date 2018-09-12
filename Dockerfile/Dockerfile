@@ -34,13 +34,3 @@ WORKDIR /var/www/
 RUN composer global require "laravel/installer"
 
 CMD chmod 777 ./docker/start-script.sh && sed -i 's/\r$//' ./docker/start-script.sh && bash ./docker/start-script.sh
-
-##CMD exec /bin/bash -c "trap : TERM INT; sleep 100000 & wait"
-
-
-
-
-
-
-
-
