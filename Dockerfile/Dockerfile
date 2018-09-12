@@ -24,7 +24,7 @@ RUN apk add --update \
 
 WORKDIR /var/www/
 
-CMD ls -a
+COPY start-script.sh /var/www/docker/start-script.sh
 
 RUN composer global require "laravel/installer"
 
