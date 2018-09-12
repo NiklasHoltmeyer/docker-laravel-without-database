@@ -8,7 +8,7 @@ if [ ! -d ./vendor ]
 then
         composer install
         php artisan key:generate
-        update composer
+        composer update 
 fi
 
 php "artisan" "serve" "--port" "8080" "--host" "0.0.0.0"
