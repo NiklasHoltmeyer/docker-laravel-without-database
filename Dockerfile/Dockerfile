@@ -30,4 +30,4 @@ RUN cp /tmp/start-script.sh /var/www/start-script.sh && \
         php7 -r "unlink('composer-setup.php');" && \
         composer global require "laravel/installer"
 
-CMD chmod +x ./start-script.sh && sed -i 's/\r$//' ./start-script.sh && bash ./start-script.sh
+CMD chmod +x /var/www/start-script.sh && sed -i 's/\r$//' /var/www/start-script.sh && bash /var/www/start-script.sh
