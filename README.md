@@ -1,5 +1,6 @@
 [Docker Hub](https://hub.docker.com/r/niklasholtmeyer/laravel_without_database/)
-***
+
+
 
 #### Table of Contents  
 1. [Installation](#installation) 
