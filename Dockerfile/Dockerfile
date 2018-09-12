@@ -1,9 +1,16 @@
 FROM php:7.1-fpm-alpine
 
+COPY start-script.sh /var/www/docker/start-script.sh
+
 RUN apk add --no-cache libpng libpng-dev && docker-php-ext-install gd && docker-php-ext-install zip && apk del libpng-dev
-RUN apk add libjpeg-turbo-dev libwebp-dev zlib-dev libxpm-dev bash git
 
 RUN apk add --update \
+    libjpeg-turbo-dev \
+    libwebp-dev \
+    zlib-dev \ 
+    libxpm-dev \
+    bash \ 
+    git \
     php7 \
     php7-fpm \
     php7-pdo \
@@ -23,8 +30,6 @@ RUN apk add --update \
     php7 -r "unlink('composer-setup.php');" 
 
 WORKDIR /var/www/
-
-COPY start-script.sh /var/www/docker/start-script.sh
 
 RUN composer global require "laravel/installer"
 
