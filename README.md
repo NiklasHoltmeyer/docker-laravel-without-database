@@ -1,4 +1,3 @@
-***
 [Docker Hub](https://hub.docker.com/r/niklasholtmeyer/laravel_without_database/)
 ***
 
