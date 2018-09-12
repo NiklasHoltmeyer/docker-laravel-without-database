@@ -1,6 +1,7 @@
 FROM php:7.1-fpm-alpine
+
+COPY start-script.sh /var/www/start-script.sh
 WORKDIR /var/www/
-COPY start-script.sh /tmp/start-script.sh
 
 RUN apk add --no-cache libpng libpng-dev && docker-php-ext-install gd && docker-php-ext-install zip && apk del libpng-dev && \
     apk add --update \
