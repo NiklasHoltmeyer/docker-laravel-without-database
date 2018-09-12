@@ -28,7 +28,9 @@ RUN apk add --no-cache libpng libpng-dev && docker-php-ext-install gd && docker-
         php7 -r "copy('http://getcomposer.org/installer', 'composer-setup.php');" && \
         php7 composer-setup.php --install-dir=/usr/bin --filename=composer && \
         php7 -r "unlink('composer-setup.php');" && \
-        composer global require "laravel/installer" \
-        && cp /tmp/start-script.sh /var/www/start-script.sh 
+        composer global require "laravel/installer" && \
+        cp /tmp/start-script.sh /var/www/start-script.sh 
 
-CMD chmod +x /var/www/start-script.sh && sed -i 's/\r$//' /var/www/start-script.sh && bash /var/www/start-script.sh
+CMD chmod +x /var/www/start-script.sh && \
+    sed -i 's/\r$//' /var/www/start-script.sh && \
+    bash /var/www/start-script.sh
