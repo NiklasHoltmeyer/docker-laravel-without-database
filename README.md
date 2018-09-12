@@ -7,6 +7,6 @@
 ###### Installation
 ``` $ cd /{laravel_project_dir}/ ``` </br>
 ```$ copy ```[.env and docker-compose.yml](https://github.com/NiklasHoltmeyer/docker-laravel-without-database/tree/master/example/docker-compose) ``` /{laravel_project_dir}/docker ``` </br>
-``` $ cd /{laravel_project_dir}/docker ```
+``` $ cd /{laravel_project_dir}/docker ``` </br>
 ``` $ docker-compose up ```
 
