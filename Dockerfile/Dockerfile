@@ -33,4 +33,4 @@ WORKDIR /var/www/
 
 RUN composer global require "laravel/installer"
 
-CMD chmod 777 ./docker/start-script.sh && sed -i 's/\r$//' ./docker/start-script.sh && bash ./docker/start-script.sh
+CMD chmod 777 /var/www/docker/start-script.sh && sed -i 's/\r$//' /var/www/docker/start-script.sh && bash /var/www/docker/start-script.sh
