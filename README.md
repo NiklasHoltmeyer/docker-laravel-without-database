@@ -7,9 +7,10 @@
 
 ***
 ###### Installation
-```
-$ cd /{laravel_project_dir}/
-$ git submodule add https://github.com/NiklasHoltmeyer/docker-laravel_without_database.git docker
-$ cd docker-compose up
+``` $ cd /{laravel_project_dir}/ ``` </br>
+```$ copy ```[.env and docker-compose.yml](https://github.com/NiklasHoltmeyer/docker-laravel-without-database/tree/master/example/docker-compose) ``` /{laravel_project_dir}/docker ``` </br>
+``` 
+$ cd /{laravel_project_dir}/docker 
+$ docker-compose up
 ```
 
